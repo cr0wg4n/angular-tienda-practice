@@ -1,5 +1,21 @@
-<p>soy el item</p>
+<!--<p>soy el item</p>
 <div *ngFor="let prod of produc">
 <p>{{prod.id_producto}}</p>
 <p>{{prod.nombre}}</p>
+</div>-->
+<div>
+    <mat-card class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar [ngStyle]="{'background-image': 'url(assets/rusty.jpg)',
+            'background-size':'cover'
+            }" > 
+            </div>
+            <mat-card-title>Id: {{prod.id_producto}}</mat-card-title>
+            <mat-card-title>Nombre: {{prod.nombre}}</mat-card-title>
+            <mat-card-title>Precio: {{prod.precio}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-actions>
+                <button routerLink="/producto/edit" mat-button>Editar Producto</button>
+        </mat-card-actions>
+    </mat-card>
 </div>
