@@ -11,7 +11,7 @@ const routeApp:Routes=[
 },
 {
   path:'producto',
-  loadChildren:'src/app/producto/producto.module#ProductoModule'
+  loadChildren:'./producto/producto.module#ProductoModule'
 }
 ];
 @NgModule({
