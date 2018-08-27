@@ -7,7 +7,9 @@ import { Producto } from './models/producto.interface';
 })
 export class ProductoService {
   url:string="http://cursoangular.hosting.cs.umss.edu.bo/api/productos";
+  
   constructor(private http: HttpClient) {}
+  
   getProductos(){
     return this.http.get<Producto[]>(this.url);
   }

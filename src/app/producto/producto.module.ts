@@ -7,6 +7,7 @@ import { ProductoItemComponent } from './producto-item/producto-item.component';
 import { MaterialModule } from "../material/material.module";
 import { ProductoRoutingModule } from './producto-routing.module';
 import { FormsModule } from '@angular/forms';
+import { ProductoService } from './producto.service';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [ProductoCreateComponent, ProductoEditComponent, 
     ProductoListComponent, ProductoItemComponent],
   providers:[
+    ProductoService
   ]
 })
 

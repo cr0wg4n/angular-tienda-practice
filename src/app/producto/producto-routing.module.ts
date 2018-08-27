@@ -14,7 +14,7 @@ const routes:Routes=[
     path:'edit',
     component:ProductoEditComponent
   },{
-    path:'item',
+    path:'items',
     component:ProductoItemComponent
   },{
     path:'list',
